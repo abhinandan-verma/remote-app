@@ -14,7 +14,7 @@ export const jobs: Job[] = [
       minSalary: 100000,
       maxSalary: 200000,
     location: "Mountain View, CA",
-      applyStatus: "applied",
+      applyStatus: "not-applied",
     },
     {
       id: "2",
@@ -29,7 +29,7 @@ export const jobs: Job[] = [
       minSalary: 80000,
         maxSalary: 150000,
       location: "Menlo Park, CA",
-      applyStatus: "interview",
+      applyStatus: "not-applied",
     },
     {
       id: "3",
@@ -44,7 +44,7 @@ export const jobs: Job[] = [
       minSalary: 90000,
         maxSalary: 180000,
       location: "Seattle, WA",
-      applyStatus: "offer",
+      applyStatus: "not-applied",
     },
     {
       id: "4",
@@ -58,7 +58,7 @@ export const jobs: Job[] = [
       tag: "Hot",
         minSalary: 95000,
       location: "Redmond, WA",
-      applyStatus: "rejected",
+      applyStatus: "not-applied",
     },
     {
       id: "5",
@@ -101,7 +101,7 @@ export const jobs: Job[] = [
       minSalary: 80000,
         maxSalary: 150000,
       location: "Palo Alto, CA",
-      applyStatus: "interview",
+      applyStatus: "not-applied",
     },
     {
       id: "8",
@@ -115,7 +115,7 @@ export const jobs: Job[] = [
       minSalary: 75000,
         maxSalary: 140000,
       location: "San Francisco, CA",
-      applyStatus: "offer",
+      applyStatus: "interview",
     },
   ];
   
