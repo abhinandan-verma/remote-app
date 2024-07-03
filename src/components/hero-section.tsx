@@ -10,7 +10,7 @@ function HeroSection() {
               backgroundImage: 'url(/hero.png)'
             }}
       >
-        <div className="text-5xl md:text-6xl text-primary font-bold flex flex-col items-end justify-end  lg:mr-20">
+        <div className="text-5xl md:text-6xl pt-12 text-primary font-bold flex flex-col items-end justify-end  lg:mr-20">
           
             <h1>Get Your</h1>
           <h1 className="text-primary font-serif font-italic ">Remote</h1>
