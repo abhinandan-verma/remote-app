@@ -62,13 +62,16 @@ function NavBar() {
                   <SidebarCloseIcon className='size-4 text-primary '/>
                 </SheetClose>
                 <div className='flex gap-1'>
-                  <nav className='pt-6 flex-col gap-1 px-2'>
+                  <nav className='pt-6 flex flex-col gap-1 px-2'>
                     {NAV.map((navitem) => (                                       
-                          <h3
+                          <Button
                             className={pathname === navitem.href ? 'text-primary bg-primary/30 p-2 rounded-md' : 'text-primary/90 p-2'}
-                            key={navitem.title}>
+                            key={navitem.title}
+                            onClick={() => onClick(navitem.href!)}
+                            variant={pathname === navitem.href ? 'default' : 'outline'}
+                          > 
                             {navitem.title}
-                          </h3>             
+                          </Button>             
                     ))}           
                   </nav>
                   <Separator orientation='vertical' className=' bg-primary h-full' /> 
