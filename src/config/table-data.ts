@@ -1,4 +1,4 @@
-import { Job } from "@/app/jobs/column";
+import { Job } from "@/app/(root)/jobs/column";
 
 export const jobs: Job[] = [
     {

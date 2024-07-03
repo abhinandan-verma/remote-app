@@ -27,6 +27,7 @@ function Nav() {
                     <NavigationMenuItem key={item.title} className='bg-transparent bg-opacity-30'>
                         <NavigationMenuTrigger
                         className={item.href === pathname ? 'text-primary bg-primary/30 ' : 'text-primary/90 hover:bg-primary/30 hover:text-primary/80 bg-transparent bg-opacity-30'}
+                        onClick={() => router.push(item.href!)}
                         >
                           {item.title}
                         </NavigationMenuTrigger>
