@@ -109,16 +109,16 @@ function DataTable<TData, TValue>({
     
   return (
     <div className="w-full">
-        <div className="flex items-center justify-center px-2 py-4 w-full bg-transparent dark:bg-white bg-opacity-30 gap-0">
+        <div className="flex items-center justify-center px-2 py-4 w-full bg-transparent bg-opacity-30 gap-0">
           <Input
               placeholder={`Filter by ${filterKeyValue}`}
               value={(table.getColumn(filterKey)?.getFilterValue() as string) ?? ""}
               onChange={(event) =>
                   table.getColumn(filterKey)?.setFilterValue(event.target.value)
               }
-              className="max-w-sm rounded-r-none"
+              className="max-w-sm rounded-r-none h-[50px] text-lg text-primary"
           />
-          <div className="flex gap-1 md:gap-2 px-2 bg-gray-200 dark:bg-black  rounded-r-lg min-h-1.5 py-2">
+          <div className="flex gap-1 md:gap-2 px-2 bg-gray-200 dark:bg-black  rounded-r-lg min-h-1.5 h-[50px]">
           <CustomTooltipProvider tooltip="Filter by Comapny">
             <Building2 className="text-primary" size={24}
              onClick={() => { setFilterKey("company")}}

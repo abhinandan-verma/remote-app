@@ -15,7 +15,7 @@ export const CustomTooltipProvider: React.FC<CustomInputProps> = ({ children, to
     return (
         <TooltipProvider>
       <Tooltip>
-        <TooltipTrigger asChild className=" cursor-pointer hover:bg-white w-full h-full">
+        <TooltipTrigger asChild className="cursor-pointer hover:bg-white w-full h-full sm:px-2">
             {children}
         </TooltipTrigger>
         <TooltipContent>

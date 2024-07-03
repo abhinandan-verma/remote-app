@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <Separator className="h-[100px]" />
       <TablePage />
     </main>
   );

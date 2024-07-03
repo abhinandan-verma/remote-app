@@ -13,7 +13,7 @@ function TablePage() {
     const data = getData();
 
     return (
-        <div className="container  py-10 bg-em">
+        <div className="container  py-2 bg-em">
             <DataTable columns={columns} data={jobs} onSave={() => {}}/>
         </div>
     )
