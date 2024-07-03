@@ -47,6 +47,7 @@ function NavBar() {
     if(isMobile) {
         return (
           <nav className='w-full fixed top-0 bg-transparent bg-opacity-70 dark:bg-gray-600 p-2 flex items-center justify-between backdrop-filter backdrop-blur-lg'>
+            
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger>
               <Button
@@ -61,6 +62,14 @@ function NavBar() {
               <SheetClose className='absolute top-2 right-2'>
                   <SidebarCloseIcon className='size-4 text-primary '/>
                 </SheetClose>
+                <Card className='flex items-center justify-center gap-2 py-3 bg-primary/10'>
+                  <Image
+                    src={'/remote.svg'}
+                    alt='logo'
+                    width={150}
+                    height={150}
+                  />
+              </Card>
                 <div className='flex gap-1'>
                   <nav className='pt-6 flex flex-col gap-1 px-2'>
                     {NAV.map((navitem) => (                                       
